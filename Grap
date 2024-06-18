@@ -1,0 +1,14 @@
+import networkx as nx
+
+# Membuat graf tak berarah
+graph = nx.Graph()
+
+# Menambahkan simpul
+graph.add_nodes_from(['A', 'B', 'C', 'D', 'E'])
+
+# Menambahkan sisi
+graph.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('C', 'E')])
+
+# Menampilkan graf
+nx.draw(graph, with_labels=True)
+plt.show()
